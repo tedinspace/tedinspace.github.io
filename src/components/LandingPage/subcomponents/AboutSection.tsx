@@ -1,5 +1,5 @@
-import { PageContent, Heading, Paragraph } from "grommet";
 import React from "react";
+import { PageContent, Heading, Paragraph } from "grommet";
 import { HEADER0, POP1 } from "../..";
 
 export function AboutSection() {
