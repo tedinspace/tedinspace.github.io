@@ -1,11 +1,11 @@
 import React from "react";
 import { Grommet } from "grommet";
-import RootLayout from "./components/RootLayout";
+import LandingPage from "./components/LandingPage/LandingPage";
 
 function App() {
   return (
-    <Grommet full>
-      <RootLayout/>
+    <Grommet full >
+      <LandingPage/>
     </Grommet>
   );
 }
