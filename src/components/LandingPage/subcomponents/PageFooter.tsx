@@ -1,7 +1,6 @@
 import React from "react";
 import { DARK3, DARK1, POP1 } from "../..";
 import { Text } from "grommet";
-import { Image } from "grommet-icons";
 
 export function PageFooter() {
   return (
@@ -17,9 +16,6 @@ export function PageFooter() {
     >
       <Text color={POP1}>
         <i>© Copyright 2022</i>&nbsp;&nbsp;
-        <a href="https://en.wikipedia.org/wiki/Tarantula_Nebula">
-          <Image size="small" />
-        </a>
         &nbsp;
       </Text>
     </div>

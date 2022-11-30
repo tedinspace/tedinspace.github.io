@@ -1,6 +1,6 @@
 import React from "react";
 import { PageContent, Heading, Paragraph } from "grommet";
-import { HEADER0, POP1 } from "../..";
+import { HEADER0, POP1, TED } from "../..";
 
 export function AboutSection() {
   return (
@@ -11,7 +11,7 @@ export function AboutSection() {
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
         <Paragraph>
-          My name is Ted, and this is my site.
+          My name is <span style={{color:TED}}>Ted</span>, and this is my site.
           <br /> <br />
           I'm a professional programmer, who works in and is passionate about
           space systems. I love building things and often have ideas for useful
@@ -24,7 +24,8 @@ export function AboutSection() {
           <br />
           I hope you enjoy perusing my stuff!
           <br />
-          <br />- Ted
+          <br />
+          <div style={{ color: TED }}>- Ted</div>
         </Paragraph>
       </PageContent>
     </div>
