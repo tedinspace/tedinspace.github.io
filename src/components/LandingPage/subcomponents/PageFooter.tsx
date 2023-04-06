@@ -15,7 +15,7 @@ export function PageFooter() {
       }}
     >
       <Text color={POP1}>
-        <i>© Copyright 2023</i>&nbsp;&nbsp;
+        <i>© Copyright {new Date().getFullYear()}</i>&nbsp;&nbsp;
         &nbsp;
       </Text>
     </div>
