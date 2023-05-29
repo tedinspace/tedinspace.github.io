@@ -23,5 +23,5 @@ export const UPPERBAR0 = "#2a3642";
 export const UPPERBAR1 = "#36424f"
 
 
-// export const UPPERBAR0 = "#4a332b";
-// export const UPPERBAR1 = "#42271e"
+// export const UPPERBAR0 = "#24252c";
+// export const UPPERBAR1 = "#343640"

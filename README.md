@@ -1,3 +1,4 @@
+![ico](public/tarantula.jpeg)
 # TedSite.com
 
 This is the source code for my personal website written in ReactJS with TypeScript. 
