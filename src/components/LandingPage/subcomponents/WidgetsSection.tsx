@@ -25,7 +25,7 @@ export function WidgetsSection() {
               <i>
                 <Text color={HEADER0}>
                   ever want to know what time it is right now in all the time
-                  formats Ted uses?
+                  formats I use? Time conversion tool included. 
                 </Text>
               </i>
             </li>

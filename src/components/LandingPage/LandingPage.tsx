@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Page } from "grommet";
 import { DARK0 } from "..";
-import { PageHeader } from "./subcomponents/PageHeader";
+import { TedHead } from "./subcomponents/TedHead";
 import { ImageHeader } from "./subcomponents/ImageHeader";
 import { AboutSection } from "./subcomponents/AboutSection";
 import { PageFooter } from "./subcomponents/PageFooter";
@@ -11,7 +11,7 @@ function LandingPage() {
   return (
     <Box fill background={DARK0} overflow="auto">
       <div>
-        <PageHeader />
+        <TedHead />
         <ImageHeader />
         <Page>
           <AboutSection />

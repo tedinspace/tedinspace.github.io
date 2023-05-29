@@ -1,13 +1,13 @@
 import React from "react";
 import { Box, Image } from "grommet";
 import { CircleInformation } from "grommet-icons";
-import { DARK5, POP2 } from "../..";
+import {  POP2, DARK6 } from "../..";
 export function ImageHeader() {
   return (
     <Box
       style={{
         height: "250px",
-        borderBottom: "1px solid " + DARK5,
+        borderBottom: "1px solid " + DARK6,
         position: "relative",
       }}
     >

@@ -6,6 +6,7 @@ export const DARK2 = "#252A31";
 export const DARK3 = "#2F343C";
 export const DARK4 = "#383E47";
 export const DARK5 = "#404854"
+export const DARK6=  "#48505c";
 
 export const LIGHT0 = "#f0e5e1"
 
@@ -17,3 +18,6 @@ export const POP2 = "#d4a798"
 export const HEADER0 = "#ABB3BF"
 
 export const TED = "#a4c8de"
+
+export const UPPERBAR0 = "#4a332b";
+export const UPPERBAR1 = "#42271e"

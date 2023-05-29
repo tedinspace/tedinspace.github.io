@@ -1,24 +1,29 @@
 import { Header, Box, Text } from "grommet";
 import { Deploy, Github, Home } from "grommet-icons";
-import { POP0, DARK1, LIGHT0, TED } from "../..";
+import {
+  POP2,
+  TED,
+  UPPERBAR1,
+  UPPERBAR0,
+} from "../..";
 
-export function PageHeader() {
+export function TedHead() {
   return (
     <Header
       pad="small"
-      background={POP0}
+      background={UPPERBAR0}
       style={{
-        borderBottom: "2px solid " + DARK1,
+        borderBottom: "2px solid " + UPPERBAR1,
       }}
     >
       <Box direction="row">
         <a href="http://tedsite.com">
-          <Deploy size="medium" color={LIGHT0} />
+          <Deploy size="medium" color={TED} />
         </a>
         &nbsp;&nbsp;
         <Text size="large">
           <b>
-            <span style={{ color: TED }}>Ted</span>Site
+            <span style={{ color: POP2 }}>Ted</span>Site
           </b>
           <i>.com</i>
         </Text>
