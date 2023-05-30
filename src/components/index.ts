@@ -19,8 +19,8 @@ export const HEADER0 = "#ABB3BF"
 
 export const TED = "#a4c8de"
 
-export const UPPERBAR0 = "#2a3642";
-export const UPPERBAR1 = "#36424f"
+export const UPPERBAR0 = "#272e38";
+export const UPPERBAR1 = "#161b22"
 
 
 // export const UPPERBAR0 = "#24252c";
