@@ -1,5 +1,5 @@
 import { Heading, PageContent, Paragraph, Text } from "grommet";
-import { Clock } from "grommet-icons";
+import { Clock, Link } from "grommet-icons";
 import { HEADER0, POP1 } from "../..";
 
 export function WidgetsSection() {
@@ -7,7 +7,7 @@ export function WidgetsSection() {
     <div>
       <PageContent>
         <Heading color={HEADER0} size="small">
-          Widgets
+          Pages
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
         <Paragraph>
@@ -25,7 +25,27 @@ export function WidgetsSection() {
               <i>
                 <Text color={HEADER0}>
                   ever want to know what time it is right now in all the time
-                  formats I use? Time conversion tool included. 
+                  formats I use? Time conversion tool included.
+                </Text>
+              </i>
+            </li>
+            <li>
+              <br />
+            </li>
+
+            <li>
+              <Link />
+              &nbsp;&nbsp;
+              <a href="https://tedsite.com/links/">
+                <Text size="large">External Links</Text>
+              </a>
+            </li>
+            <li>
+              <i>
+                <Text color={HEADER0}>
+                  an organized list of data sources and code libraries for
+                  space-related related research and development--as well as
+                  some ReactJS and web-development links.
                 </Text>
               </i>
             </li>
