@@ -6,7 +6,8 @@ import { ImageHeader } from "./subcomponents/ImageHeader";
 import { AboutSection } from "./subcomponents/AboutSection";
 import { PageFooter } from "./subcomponents/PageFooter";
 import { CodeLinkSection } from "./subcomponents/CodeLinkSection";
-import { WidgetsSection } from "./subcomponents/WidgetsSection";
+import { PagesSection } from "./subcomponents/PagesSection";
+import { TestingSection } from "./subcomponents/TestingSection";
 function LandingPage() {
   return (
     <Box fill background={DARK0} overflow="auto">
@@ -15,8 +16,9 @@ function LandingPage() {
         <ImageHeader />
         <Page>
           <AboutSection />
-          <WidgetsSection/>
+          <PagesSection/>
           <CodeLinkSection/>
+          <TestingSection/>
         </Page>
       </div>
       <PageFooter />

@@ -40,8 +40,6 @@ export function CodeLinkSection() {
                 <Text color={HEADER0}>The source code of this website.</Text>
               </i>
             </li>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
           </ul>
         </Paragraph>
       </PageContent>

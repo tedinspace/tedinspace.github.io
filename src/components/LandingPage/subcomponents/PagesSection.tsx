@@ -2,7 +2,7 @@ import { Heading, PageContent, Paragraph, Text } from "grommet";
 import { Clock, Link } from "grommet-icons";
 import { HEADER0, POP1 } from "../..";
 
-export function WidgetsSection() {
+export function PagesSection() {
   return (
     <div>
       <PageContent>
@@ -37,7 +37,7 @@ export function WidgetsSection() {
               <Link />
               &nbsp;&nbsp;
               <a href="https://tedsite.com/links/">
-                <Text size="large">External Links</Text>
+                <Text size="large">Curated Links</Text>
               </a>
             </li>
             <li>
