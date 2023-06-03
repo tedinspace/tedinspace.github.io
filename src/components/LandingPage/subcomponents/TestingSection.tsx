@@ -7,10 +7,10 @@ import {
   Subtract,
   Windows,
 } from "grommet-icons";
-import React from "react";
 import { HEADER0, POP1 } from "../..";
 
 export function TestingSection() {
+  const W = "33px";
   return (
     <div>
       <PageContent>
@@ -25,11 +25,11 @@ export function TestingSection() {
           <ul>
             <li>
               <Box direction="row">
-                <Chrome color="plain" size="large" />
-                <div style={{ width: 25 }} />
-                <Firefox color="plain" size="large" />
-                <div style={{ width: 25 }} />
-                <SafariOption color="plain" size="large" />
+                <Chrome color="plain" size={W}/>
+                <Divider />
+                <Firefox color="plain" size={W} />
+                <Divider />
+                <SafariOption color="plain" size={W} />
               </Box>
             </li>
           </ul>
@@ -39,9 +39,9 @@ export function TestingSection() {
           <ul>
             <li>
               <Box direction="row">
-                <Apple color="plain" size="large" />
-                <div style={{ width: 25 }} />
-                <Windows color="plain" size="large" />
+                <Apple color="plain"size={W} />
+                <Divider />
+                <Windows color="plain" size={W} />
               </Box>
             </li>
           </ul>
@@ -55,4 +55,8 @@ export function TestingSection() {
       </PageContent>
     </div>
   );
+}
+
+const Divider = ()=>{
+  return <div style={{ width: 25 }} />
 }
