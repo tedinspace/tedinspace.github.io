@@ -1,5 +1,5 @@
 import { Heading, PageContent, Paragraph, Text } from "grommet";
-import { Clock, Link } from "grommet-icons";
+import { Clock, Link, Send } from "grommet-icons";
 import { HEADER0, POP1 } from "../..";
 
 export function PagesSection() {
@@ -47,6 +47,21 @@ export function PagesSection() {
                   space-related related research and development--as well as
                   some ReactJS and web-development links.
                 </Text>
+              </i>
+            </li>
+            <li>
+              <br />
+            </li>
+            <li>
+              <Send />
+              &nbsp;&nbsp;
+              <a href="https://tedsite.com/contact/">
+                <Text size="large">Contact Me</Text>
+              </a>
+            </li>
+            <li>
+              <i>
+                <Text color={HEADER0}>Feel free to reach out!</Text>
               </i>
             </li>
           </ul>
