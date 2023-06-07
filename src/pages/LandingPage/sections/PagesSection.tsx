@@ -62,7 +62,7 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={HEADER0}>Feel free to reach out!</Text>
+                <Text color={HEADER0}>feel free to reach out!</Text>
               </i>
             </li>
           </ul>

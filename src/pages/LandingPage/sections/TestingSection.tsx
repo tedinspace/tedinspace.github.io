@@ -1,4 +1,4 @@
-import { Box, Heading, PageContent, Paragraph } from "grommet";
+import { Box, Heading, PageContent } from "grommet";
 import {
   Apple,
   Chrome,
@@ -21,20 +21,20 @@ export function TestingSection() {
         <br />
         <Box color={HEADER0}>
           <Box direction="row">
-          <Subtract size="small" />
-          &nbsp; This website was tested on the following:
-          <br />
-          <ul>
-            <li>
-              <Box direction="row">
-                <Chrome color="plain" size={W} />
-                <Divider />
-                <Firefox color="plain" size={W} />
-                <Divider />
-                <SafariOption color="plain" size={W} />
-              </Box>
-            </li>
-          </ul>
+            <Subtract size="small" />
+            &nbsp; This website was tested on the following:
+            <br />
+            <ul>
+              <li>
+                <Box direction="row">
+                  <Chrome color="plain" size={W} />
+                  <Divider />
+                  <Firefox color="plain" size={W} />
+                  <Divider />
+                  <SafariOption color="plain" size={W} />
+                </Box>
+              </li>
+            </ul>
           </Box>
           <Subtract size="small" />
           &nbsp;across the following:
@@ -50,10 +50,6 @@ export function TestingSection() {
           </ul>
           <Subtract size="small" />
           &nbsp;mobile compatibility secondary but eventual
-          <br />
-          <br />
-          <br />
-          <br />
         </Box>
       </PageContent>
     </div>
