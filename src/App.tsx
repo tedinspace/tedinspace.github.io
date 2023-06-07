@@ -4,14 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import { TedHead } from "./shared/TedHead";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
-import { LinkGrid } from "./pages/LinksPage/LinksPage";
+import { LinksPage } from "./pages/LinksPage/LinksPage";
 function App() {
   return (
     <Grommet full theme={theme}>
       <TedHead />
       <Routes>
         <Route path="/" element={<RootLayout />} />
-        <Route path="/links" element={<LinkGrid/>} />
+        <Route path="/links" element={<LinksPage/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<div>404</div>} />
       </Routes>

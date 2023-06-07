@@ -3,7 +3,7 @@ import { Box } from "grommet";
 import { ColumnContent } from "./subcomponents/Data";
 import { LinkColumn } from "./subcomponents/LinkColumn";
 
-export function LinkGrid() {
+export function LinksPage() {
   /* state management */
   const [width, setWindowWidth] = useState(0); // hooks
   useEffect(() => {
