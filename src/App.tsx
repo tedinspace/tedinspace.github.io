@@ -5,7 +5,7 @@ import { TedHead } from "./shared/TedHead";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
 import { LinksPage } from "./pages/LinksPage/LinksPage";
-import { Page404 } from "./pages/404Page/Page404";
+import { Page404 } from "./pages/Page404/Page404";
 function App() {
   
   return (
