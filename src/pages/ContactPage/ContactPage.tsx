@@ -5,11 +5,12 @@ import {
   Button,
   Form,
   FormField,
+  Spinner,
   Text,
   TextArea,
   TextInput,
 } from "grommet";
-import { DARK0 } from "../../shared/colors";
+import { DARK0, POP2 } from "../../shared/colors";
 
 function ContactPage() {
   const [value, setValue] = useState({
@@ -19,15 +20,17 @@ function ContactPage() {
   });
   const [wasSubmitted, setWasSubmitted] = useState(false);
   const [wasFailure, setWasFailure] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const width: number = 250;
   const style: any = { border: "1px solid #5F6B7C", background: DARK0 };
   return (
-    <Box fill pad="medium" id="grid-pattern" overflow={"none"}>
+    <Box fill pad="medium" overflow={"auto"} id="grid-pattern">
       <Text size="xxlarge">Contact Me</Text>
       <Form
         value={value}
         onChange={(nextValue) => setValue(nextValue)}
         onSubmit={({ value: nextValue }) => {
+          setIsLoading(true);
           axios
             .post(
               "https://contact-ted.onrender.com/email",
@@ -43,10 +46,12 @@ function ContactPage() {
               }
             )
             .then(() => {
+              setIsLoading(false);
               setWasSubmitted(true);
               setWasFailure(false);
             })
             .catch((err) => {
+              setIsLoading(false);
               setWasSubmitted(false);
               setWasFailure(true);
             });
@@ -85,23 +90,27 @@ function ContactPage() {
           />
         </FormField>
         <br />
-        {wasSubmitted ? (
-          <>
-            <Button
-              type="submit"
-              label="submit"
-              size="large"
-              style={{ background: "#238C2C" }}
-            />
-            <br />
-            &nbsp;
-            <Text color={"#43BF4D"}>
-              <b>message sent!</b>
-            </Text>
-          </>
-        ) : (
-          <Button type="submit" label="submit" size="large" />
-        )}
+        <Button
+          style={wasSubmitted ? { background: "#238C2C" } : {}}
+          type="submit"
+          label={
+            isLoading ? (
+              <Spinner
+                border={[
+                  {
+                    side: "all",
+                    color: POP2,
+                    size: "medium",
+                    style: "dotted",
+                  },
+                ]}
+              />
+            ) : (
+              "submit"
+            )
+          }
+          size="large"
+        />
       </Form>
       {wasFailure && (
         <>
@@ -110,6 +119,11 @@ function ContactPage() {
             <b>something went wrong; message not sent</b>
           </Text>
         </>
+      )}
+      {wasSubmitted && (
+        <Text color={"#43BF4D"}>
+          <b>message sent!</b>
+        </Text>
       )}
     </Box>
   );
