@@ -1,7 +1,6 @@
-import { Heading, PageContent, Paragraph, Text } from "grommet";
+import { Box, Heading, PageContent, Text } from "grommet";
 import { Code, Github } from "grommet-icons";
-import React from "react";
-import { HEADER0, POP1 } from "../..";
+import { HEADER0, POP1 } from "../../../shared/colors";
 
 export function CodeLinkSection() {
   return (
@@ -11,7 +10,8 @@ export function CodeLinkSection() {
           Repositories
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
-        <Paragraph>
+        <br/>
+        <Box>
           If you're curious.
           <br />
           <ul>
@@ -41,7 +41,7 @@ export function CodeLinkSection() {
               </i>
             </li>
           </ul>
-        </Paragraph>
+        </Box>
       </PageContent>
     </div>
   );

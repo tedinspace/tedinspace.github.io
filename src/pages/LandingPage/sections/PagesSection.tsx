@@ -1,6 +1,6 @@
-import { Heading, PageContent, Paragraph, Text } from "grommet";
+import { Heading, PageContent, Box, Text } from "grommet";
 import { Clock, Link, Send } from "grommet-icons";
-import { HEADER0, POP1 } from "../..";
+import { HEADER0, POP1 } from "../../../shared/colors";
 
 export function PagesSection() {
   return (
@@ -10,7 +10,8 @@ export function PagesSection() {
           Pages
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
-        <Paragraph>
+        <br/>
+        <Box >
           adding things as I can!
           <br />
           <ul>
@@ -65,7 +66,7 @@ export function PagesSection() {
               </i>
             </li>
           </ul>
-        </Paragraph>
+        </Box>
       </PageContent>
     </div>
   );

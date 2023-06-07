@@ -5,7 +5,7 @@ import {
   TED,
   UPPERBAR1,
   UPPERBAR0,
-} from "../..";
+} from "./colors";
 
 export function TedHead() {
   return (

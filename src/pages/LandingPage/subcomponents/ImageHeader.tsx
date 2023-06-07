@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Image } from "grommet";
 import { CircleInformation } from "grommet-icons";
-import {  POP2, UPPERBAR0 } from "../..";
+import {  POP2, UPPERBAR0 } from "../../../shared/colors";
 export function ImageHeader() {
   return (
     <Box

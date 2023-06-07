@@ -1,5 +1,4 @@
-import React from "react";
-import { DARK3, DARK1, POP1 } from "../..";
+import { DARK3, DARK1, POP1 } from "../../../shared/colors";
 import { Text } from "grommet";
 
 export function PageFooter() {

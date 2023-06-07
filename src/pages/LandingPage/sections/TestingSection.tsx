@@ -7,7 +7,7 @@ import {
   Subtract,
   Windows,
 } from "grommet-icons";
-import { HEADER0, POP1 } from "../..";
+import { HEADER0, POP1 } from "../../../shared/colors";
 
 export function TestingSection() {
   const W = "33px";
@@ -18,14 +18,16 @@ export function TestingSection() {
           <i>Note</i>
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
-        <Paragraph color={HEADER0}>
+        <br />
+        <Box color={HEADER0}>
+          <Box direction="row">
           <Subtract size="small" />
           &nbsp; This website was tested on the following:
           <br />
           <ul>
             <li>
               <Box direction="row">
-                <Chrome color="plain" size={W}/>
+                <Chrome color="plain" size={W} />
                 <Divider />
                 <Firefox color="plain" size={W} />
                 <Divider />
@@ -33,13 +35,14 @@ export function TestingSection() {
               </Box>
             </li>
           </ul>
+          </Box>
           <Subtract size="small" />
           &nbsp;across the following:
           <br />
           <ul>
             <li>
               <Box direction="row">
-                <Apple color="plain"size={W} />
+                <Apple color="plain" size={W} />
                 <Divider />
                 <Windows color="plain" size={W} />
               </Box>
@@ -51,12 +54,12 @@ export function TestingSection() {
           <br />
           <br />
           <br />
-        </Paragraph>
+        </Box>
       </PageContent>
     </div>
   );
 }
 
-const Divider = ()=>{
-  return <div style={{ width: 25 }} />
-}
+const Divider = () => {
+  return <div style={{ width: 25 }} />;
+};
