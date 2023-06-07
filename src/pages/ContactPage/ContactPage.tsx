@@ -22,7 +22,7 @@ function ContactPage() {
   const width: number = 250;
   const style: any = { border: "1px solid #5F6B7C", background: DARK0 };
   return (
-    <Box fill pad="medium" id="grid-pattern" overflow={"auto"}>
+    <Box fill pad="medium" id="grid-pattern" overflow={"none"}>
       <Text size="xxlarge">Contact Me</Text>
       <Form
         value={value}

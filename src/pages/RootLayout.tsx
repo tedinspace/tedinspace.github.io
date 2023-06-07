@@ -8,7 +8,7 @@ import { PagesSection } from "./LandingPage/sections/PagesSection";
 import { BottomPad } from "./LandingPage/subcomponents/BottomPad";
 function RootLayout() {
   return (
-    <Box fill background={DARK0} overflow="auto">
+    <Box fill background={DARK0} overflow="none">
       <div>
         <ImageHeader />
         <Page>

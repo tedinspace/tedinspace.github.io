@@ -1,6 +1,7 @@
 import { Heading, PageContent, Box, Text } from "grommet";
-import { Clock, Link, Send } from "grommet-icons";
+import { Clock, Link as GLink, Send } from "grommet-icons";
 import { HEADER0, POP1 } from "../../../shared/colors";
+import { Link } from "react-router-dom";
 
 export function PagesSection() {
   return (
@@ -10,8 +11,8 @@ export function PagesSection() {
           Pages
         </Heading>
         <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
-        <br/>
-        <Box >
+        <br />
+        <Box>
           adding things as I can!
           <br />
           <ul>
@@ -35,11 +36,11 @@ export function PagesSection() {
             </li>
 
             <li>
-              <Link />
+              <GLink />
               &nbsp;&nbsp;
-              <a href="https://tedsite.com/links/">
+              <Link to="/links">
                 <Text size="large">Curated Links</Text>
-              </a>
+              </Link>
             </li>
             <li>
               <i>
@@ -56,9 +57,9 @@ export function PagesSection() {
             <li>
               <Send />
               &nbsp;&nbsp;
-              <a href="https://tedsite.com/contact/">
+              <Link to="/contact">
                 <Text size="large">Contact Me</Text>
-              </a>
+              </Link>
             </li>
             <li>
               <i>
@@ -71,3 +72,35 @@ export function PagesSection() {
     </div>
   );
 }
+
+// function Layout() {
+//   return (
+//     <div>
+//       {/* A "layout route" is a good place to put markup you want to
+//           share across all the pages on your site, like navigation. */}
+//       <nav>
+//         <ul>
+//           <li>
+//             <Link to="/">Home</Link>
+//           </li>
+//           <li>
+//             <Link to="/about">About</Link>
+//           </li>
+//           <li>
+//             <Link to="/dashboard">Dashboard</Link>
+//           </li>
+//           <li>
+//             <Link to="/nothing-here">Nothing Here</Link>
+//           </li>
+//         </ul>
+//       </nav>
+
+//       <hr />
+
+//       {/* An <Outlet> renders whatever child route is currently active,
+//           so you can think about this <Outlet> as a placeholder for
+//           the child routes we defined above. */}
+//       <Outlet />
+//     </div>
+//   );
+// }
