@@ -4,13 +4,14 @@ import { Routes, Route } from "react-router-dom";
 import { TedHead } from "./shared/TedHead";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
+import { LinkGrid } from "./pages/LinksPage/LinkGrid";
 function App() {
   return (
     <Grommet full theme={theme}>
       <TedHead />
       <Routes>
         <Route path="/" element={<RootLayout />} />
-        <Route path="/links" element={<></>} />
+        <Route path="/links" element={<LinkGrid/>} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/*" element={<div>404</div>} />
       </Routes>
@@ -52,7 +53,14 @@ export default App;
 //   );
 // }
 let theme = {
+  themeMode: 'dark',
+
   global: {
+    font: {
+      family: `-apple-system,
+           BlinkMacSystemFont,
+           "Segoe UI"`,
+    },
     active: {
       background: { color: "#C5CBD3", opacity: 1 },
     },
@@ -90,6 +98,21 @@ let theme = {
       second: {
         color: POP2,
       },
+    },
+  },
+  card: {
+    hover: {
+      container: {
+        elevation: 'large',
+      },
+    },
+    container: {
+      elevation: 'medium',
+      extend: `transition: all 0.2s ease-in-out;`,
+    },
+    footer: {
+      pad: { horizontal: 'medium', vertical: 'small' },
+      background: '#00000008',
     },
   },
 };
