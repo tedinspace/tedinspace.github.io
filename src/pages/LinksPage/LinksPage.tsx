@@ -18,7 +18,7 @@ export function LinkGrid() {
     const width = window.innerWidth;
     setWindowWidth(width);
   };
-  return <ColumnDivision width={width} />;
+  return <Box fill overflow={"auto"}> <ColumnDivision width={width} /></Box>;
 }
 const desiredWidth: number = 800;
 function ColumnDivision(props: { width: number }) {

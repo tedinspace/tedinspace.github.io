@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import { TedHead } from "./shared/TedHead";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
-import { LinkGrid } from "./pages/LinksPage/LinkGrid";
+import { LinkGrid } from "./pages/LinksPage/LinksPage";
 function App() {
   return (
     <Grommet full theme={theme}>
