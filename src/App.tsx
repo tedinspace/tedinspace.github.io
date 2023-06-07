@@ -5,6 +5,7 @@ import { TedHead } from "./shared/TedHead";
 import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
 import { LinksPage } from "./pages/LinksPage/LinksPage";
+import { Page404 } from "./pages/404Page/Page404";
 function App() {
   
   return (
@@ -14,7 +15,7 @@ function App() {
         <Route path="/" element={<RootLayout />} />
         <Route path="/links" element={<LinksPage />} />
         <Route path="/contact" element={<ContactPage />} />
-        <Route path="/*" element={<div>404</div>} />
+        <Route path="/*" element={<Page404/>} />
       </Routes>
     </Grommet>
   );
