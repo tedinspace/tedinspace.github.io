@@ -18,7 +18,11 @@ export function LinksPage() {
     const width = window.innerWidth;
     setWindowWidth(width);
   };
-  return <Box fill overflow={"none"}> <ColumnDivision width={width} /></Box>;
+  return (
+    <Box fill overflow={"none"} >
+      <ColumnDivision width={width} />
+    </Box>
+  );
 }
 const desiredWidth: number = 800;
 function ColumnDivision(props: { width: number }) {

@@ -6,8 +6,9 @@ import ContactPage from "./pages/ContactPage/ContactPage";
 import { DARK4, POP0, POP1, POP2, TED } from "./shared/colors";
 import { LinksPage } from "./pages/LinksPage/LinksPage";
 function App() {
+  
   return (
-    <Grommet full theme={theme}>
+    <Grommet full theme={theme} id="scroller">
       <TedHead />
       <Routes>
         <Route path="/" element={<RootLayout />} />
