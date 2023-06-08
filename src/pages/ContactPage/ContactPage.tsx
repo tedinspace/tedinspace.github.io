@@ -10,7 +10,7 @@ import {
   TextArea,
   TextInput,
 } from "grommet";
-import { DARK0, POP2 } from "../../shared/colors";
+import { POP2 } from "../../shared/colors";
 
 function ContactPage() {
   const [value, setValue] = useState({
@@ -22,14 +22,16 @@ function ContactPage() {
   const [wasFailure, setWasFailure] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const width: number = 250;
-  const style: any = { border: "1px solid #5F6B7C", background: DARK0 };
+  const style: any = { border: "1px solid #5F6B7C", background: "#0e1114" };
   return (
-    <Box fill pad="medium" >
+    <Box fill pad="medium">
       <Text size="xxlarge">Contact Me</Text>
       <Form
         value={value}
         onChange={(nextValue) => setValue(nextValue)}
         onSubmit={({ value: nextValue }) => {
+          setWasSubmitted(false);
+          setWasFailure(false);
           setIsLoading(true);
           axios
             .post(
@@ -123,6 +125,12 @@ function ContactPage() {
       {wasSubmitted && (
         <Text color={"#43BF4D"}>
           <b>message sent!</b>
+        </Text>
+      )}
+      {isLoading && (
+        <Text color={POP2}>
+          <br/>
+          <i>Don't worry if this takes a bit,<br/> it means the server is spinning up</i>
         </Text>
       )}
     </Box>
