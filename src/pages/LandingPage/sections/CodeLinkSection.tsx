@@ -1,6 +1,5 @@
 import { Box, Heading, PageContent, Text } from "grommet";
 import { Code, Github } from "grommet-icons";
-import { HEADER0, POP1 } from "../../../shared/colors";
 import { Line } from "./Line";
 
 export function CodeLinkSection() {
@@ -13,7 +12,7 @@ export function CodeLinkSection() {
         <Line/>
         <br/>
         <Box>
-          If you're curious.
+          <Text color="header">If you're curious.</Text>
           <br />
           <ul>
             <li>
@@ -25,7 +24,7 @@ export function CodeLinkSection() {
             </li>
             <li>
               <i>
-                <Text color={"header"}>you can find all of my (public) repositories here.</Text>
+                <Text color={"body_text"}>you can find all of my (public) repositories here.</Text>
               </i>
             </li>
             <li>&nbsp;</li>
@@ -38,7 +37,7 @@ export function CodeLinkSection() {
             </li>
             <li>
               <i>
-                <Text color={"header"}>The source code of this website.</Text>
+                <Text color={"body_text"}>The source code of this website.</Text>
               </i>
             </li>
           </ul>

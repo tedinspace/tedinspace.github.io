@@ -47,8 +47,8 @@ export const theme = {
         dark: "#1C2127", // DARK 0
         light: "#E5E8EB",
       },
-      header:{
-        dark:"#ABB3BF",
+      header: {
+        dark: "#ABB3BF",
         light: "gray",
       },
 
@@ -59,6 +59,10 @@ export const theme = {
       orange: {
         dark: "orange_light",
         light: "orange_medium",
+      },
+      body_text: {
+        dark:"#ABB3BF",
+        light:"black"
       },
       warning: "#EB6847",
       success0: "#238C2C",
@@ -73,6 +77,17 @@ export const theme = {
       focus: "light_blue",
       control: "light_blue",
       active: "orange_medium",
+    },
+  },
+  card: {
+    hover: {
+      container: {
+        elevation: "large",
+      },
+    },
+    container: {
+      elevation: "none",
+      extend: `transition: all 0.2s ease-in-out;`,
     },
   },
 };

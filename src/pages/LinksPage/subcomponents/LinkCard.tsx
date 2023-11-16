@@ -1,5 +1,4 @@
 import { Box, Card, CardBody, Text } from "grommet";
-import { DARK3, DARK0 } from "../../../shared/colors";
 
 export interface ILinkCard {
   title: string;
@@ -11,10 +10,15 @@ export function LinkCard(props: ILinkCard) {
   return (
     <Box margin={"xsmall"} >
       <Card
-        style={{ border: "1px solid " + DARK3 }}
-        background={DARK0}
-        elevation="xlarge"
         key={props.title}
+        border={
+          {
+            side:"all",
+            color:"bar_body",
+            size:"3px"
+          }
+        }
+        
         onClick={() => {
           window.open(props.link);
         }}
@@ -23,10 +27,10 @@ export function LinkCard(props: ILinkCard) {
           <Box gap="small" align="center" direction="row" pad="small">
             {props.icon}
             <Box pad={"xxsmall"} style={{paddingLeft:10}}>
-              <Text size={"large"} weight="bold" color={"#C5CBD3"}>
+              <Text size={"large"} weight="bold" color={"header"}>
                 {props.title}
               </Text>
-              <Text color={"#ABB3BF"} size={"medium"}>
+              <Text color={"header"} size={"medium"}>
                 {props.description}
               </Text>
             </Box>

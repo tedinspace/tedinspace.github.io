@@ -8,11 +8,12 @@ import { Page404 } from "./pages/Page404/Page404";
 import { deepMerge } from "grommet/utils";
 import { theme } from "./shared/theme";
 import React from "react";
+import { fetchThemeSetting, updateThemeSetting } from "./util/storage";
 
 const theme_merged = deepMerge(grommet, theme);
 
 function App() {
-  const [darkMode, toggleDarkLight] = React.useState(false);
+  const [darkMode, toggleDarkLight] = React.useState(fetchThemeSetting());
   return (
     <Grommet
       full
@@ -25,6 +26,7 @@ function App() {
           darkMode={darkMode}
           toggleDarkLight={() => {
             toggleDarkLight(!darkMode);
+            updateThemeSetting(!darkMode)
           }}
         />
         <Routes>

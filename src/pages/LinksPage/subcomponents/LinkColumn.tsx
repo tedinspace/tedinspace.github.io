@@ -24,7 +24,7 @@ function LinkColumnSection(title: string, links: ILinkCard[]) {
       <Box pad="small" direction="row">
         <FormNext size="27px" />
         &nbsp;&nbsp;
-        <Text color={"#bcc7d6"} size="large">
+        <Text color={"header"} size="large">
           <b>{title}</b>
         </Text>
       </Box>
