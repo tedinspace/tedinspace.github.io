@@ -8,7 +8,7 @@ import { Page404 } from "./pages/Page404/Page404";
 import { deepMerge } from "grommet/utils";
 import { theme } from "./shared/theme";
 import React from "react";
-import { fetchThemeSetting, updateThemeSetting } from "./util/storage";
+import { fetchThemeSetting, updateThemeSetting } from "./shared/storage";
 
 const theme_merged = deepMerge(grommet, theme);
 

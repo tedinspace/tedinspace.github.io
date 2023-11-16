@@ -61,8 +61,12 @@ export const theme = {
         light: "orange_medium",
       },
       body_text: {
-        dark:"#ABB3BF",
-        light:"black"
+        dark: "#ABB3BF",
+        light: "black",
+      },
+      swap_soft:{
+        dark:"#fff",
+        light:"#8F99A8"
       },
       warning: "#EB6847",
       success0: "#238C2C",
@@ -88,6 +92,19 @@ export const theme = {
     container: {
       elevation: "none",
       extend: `transition: all 0.2s ease-in-out;`,
+    },
+  },
+  clock: {
+    analog: {
+      hour: {
+        color: "light_blue",
+      },
+      minute: {
+        color: "orange_medium",
+      },
+      second: {
+        color: "orange_light",
+      },
     },
   },
 };
