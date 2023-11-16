@@ -135,8 +135,9 @@ function ContactPage() {
         <Text color={"orange_light"}>
           <br />
           <i>
-            Don't worry if this takes a bit,
-            <br /> it means the server is spinning up
+            Okay here's the thing: I'm cheap and I'm using a free tier to host my server,<br/> 
+            so this will take about 30-60 seconds to send while the server spins up. 
+            <br /> You have to leave the page open while it's sending, but you can minimize it and go about your day. 
           </i>
         </Text>
       )}

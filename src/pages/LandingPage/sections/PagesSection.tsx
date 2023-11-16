@@ -81,7 +81,7 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={"body_text"}>feel free to reach out!</Text>
+                <Text color={"body_text"}>Bug report? Something on your mind? Feel free to reach out!</Text>
               </i>
             </li>
           </ul>
