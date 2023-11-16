@@ -1,5 +1,5 @@
 import { Heading, PageContent, Box, Text } from "grommet";
-import { Clock, Link as GLink, Send } from "grommet-icons";
+import { Clock, Link as GLink, Integration, Send } from "grommet-icons";
 import { Link } from "react-router-dom";
 import { Line } from "./Line";
 
@@ -17,7 +17,7 @@ export function PagesSection() {
           <br />
           <ul>
           <li>
-              <Clock />
+              <Integration />
               &nbsp;&nbsp;
               <a href="https://tedsite.com/convolve/">
                 <Text size="large">Convolution Calculator</Text>
