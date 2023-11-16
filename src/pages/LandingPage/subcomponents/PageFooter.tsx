@@ -1,4 +1,3 @@
-import { DARK3, DARK1, POP1 } from "../../../shared/colors";
 import { Text } from "grommet";
 
 export function PageFooter() {
@@ -9,12 +8,10 @@ export function PageFooter() {
         bottom: 0,
         width: "100%",
         textAlign: "right",
-        borderTop: "1px solid " + DARK3,
-        background: DARK1,
       }}
     >
-      <Text color={POP1}>
-        <i>© Copyright {new Date().getFullYear()}</i>&nbsp;&nbsp;&nbsp;
+      <Text color={"orange_medium"}>
+        <i>© {new Date().getFullYear()} TedInSpace</i>&nbsp;&nbsp;&nbsp;
       </Text>
     </div>
   );

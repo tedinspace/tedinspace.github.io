@@ -10,7 +10,7 @@ import {
   TextArea,
   TextInput,
 } from "grommet";
-import { POP2 } from "../../shared/colors";
+import { theme } from "../../shared/theme";
 
 function ContactPage() {
   const [value, setValue] = useState({
@@ -22,10 +22,12 @@ function ContactPage() {
   const [wasFailure, setWasFailure] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const width: number = 250;
-  const style: any = { border: "1px solid #5F6B7C", background: "#0e1114" };
+  const style: any = {};
   return (
     <Box fill pad="medium">
-      <Text size="xxlarge">Contact Me</Text>
+      <Text size="xxlarge" color="orange">
+        Contact Me
+      </Text>
       <Form
         value={value}
         onChange={(nextValue) => setValue(nextValue)}
@@ -93,7 +95,9 @@ function ContactPage() {
         </FormField>
         <br />
         <Button
-          style={wasSubmitted ? { background: "#238C2C" } : {}}
+          style={
+            wasSubmitted ? { background: theme.global.colors.success0 } : {}
+          }
           type="submit"
           label={
             isLoading ? (
@@ -101,7 +105,7 @@ function ContactPage() {
                 border={[
                   {
                     side: "all",
-                    color: POP2,
+                    color: "orange",
                     size: "medium",
                     style: "dotted",
                   },
@@ -117,20 +121,23 @@ function ContactPage() {
       {wasFailure && (
         <>
           &nbsp;
-          <Text color={"#EB6847"}>
+          <Text color={"warning"}>
             <b>something went wrong; message not sent</b>
           </Text>
         </>
       )}
       {wasSubmitted && (
-        <Text color={"#43BF4D"}>
+        <Text color={"success1"}>
           <b>message sent!</b>
         </Text>
       )}
       {isLoading && (
-        <Text color={POP2}>
-          <br/>
-          <i>Don't worry if this takes a bit,<br/> it means the server is spinning up</i>
+        <Text color={"orange_light"}>
+          <br />
+          <i>
+            Don't worry if this takes a bit,
+            <br /> it means the server is spinning up
+          </i>
         </Text>
       )}
     </Box>
