@@ -1,16 +1,16 @@
 import { Heading, PageContent, Box, Text } from "grommet";
 import { Clock, Link as GLink, Send } from "grommet-icons";
-import { HEADER0, POP1 } from "../../../shared/colors";
 import { Link } from "react-router-dom";
+import { Line } from "./Line";
 
 export function PagesSection() {
   return (
     <div>
       <PageContent>
-        <Heading color={HEADER0} size="small">
+        <Heading color={"header"} size="small">
           Pages
         </Heading>
-        <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
+        <Line/>
         <br />
         <Box style={{ maxWidth: 480 }}>
           adding things as I can!
@@ -25,7 +25,7 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={HEADER0}>
+                <Text color={"header"}>
                   ever want to know what time it is right now in all the time
                   formats I use? Time conversion tool included.
                 </Text>
@@ -44,9 +44,9 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={HEADER0}>
+                <Text color={"header"}>
                   an organized list of data sources and code libraries for
-                  space-related related research and development--as well as
+                  space-related research and development--as well as
                   some ReactJS and web-development links.
                 </Text>
               </i>
@@ -63,7 +63,7 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={HEADER0}>feel free to reach out!</Text>
+                <Text color={"blue"}>feel free to reach out!</Text>
               </i>
             </li>
           </ul>

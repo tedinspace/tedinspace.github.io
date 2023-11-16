@@ -47,6 +47,10 @@ export const theme = {
         dark: "#1C2127", // DARK 0
         light: "#E5E8EB",
       },
+      header:{
+        dark:"#ABB3BF",
+        light: "gray",
+      },
 
       blue: {
         dark: "light_blue",

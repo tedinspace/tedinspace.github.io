@@ -1,16 +1,16 @@
-import { PageContent, Heading, Paragraph } from "grommet";
-import { HEADER0, POP1, TED } from "../../../shared/colors";
+import { PageContent, Heading, Paragraph, Text } from "grommet";
+import { Line } from "./Line";
 
 export function AboutSection() {
   return (
     <div>
       <PageContent>
-        <Heading color={HEADER0} size="small">
+        <Heading color={"header"} size="small">
           About
         </Heading>
-        <div style={{ width: "150px", borderTop: "1px solid " + POP1 }} />
+        <Line/>
         <Paragraph>
-          My name is <span style={{ color: TED }}>Ted</span>, and this is my
+          My name is <Text color="logo">Ted</Text>, and this is my
           site.
           <br /> <br />
           I'm a professional programmer, who works in and is passionate about
@@ -25,7 +25,7 @@ export function AboutSection() {
           I hope you enjoy perusing my stuff!
           <br />
           <br />
-          <span style={{ color: TED }}>- Ted</span>
+          <Text color="blue">- Ted</Text>
         </Paragraph>
       </PageContent>
     </div>
