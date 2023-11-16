@@ -10,12 +10,13 @@ export function PagesSection() {
         <Heading color={"header"} size="small">
           Pages
         </Heading>
-        <Line/>
+        <Line />
         <br />
-        <Box style={{ maxWidth: 480 }} >
+        <Box style={{ maxWidth: 480 }}>
           <Text color="header"> adding things as I can!</Text>
           <br />
           <ul>
+            {/*
           <li>
               <Integration />
               &nbsp;&nbsp;
@@ -26,14 +27,14 @@ export function PagesSection() {
             <li>
               <i>
                 <Text color={"body_text"}>
-                  (Coming Soon) numerically solves convolution integrals 
+                  numerically solves convolution integrals 
                 </Text>
               </i>
             </li>
             <li>
               <br />
             </li>
-
+          */}
             <li>
               <Clock />
               &nbsp;&nbsp;
@@ -64,8 +65,8 @@ export function PagesSection() {
               <i>
                 <Text color={"body_text"}>
                   an organized list of data sources and code libraries for
-                  space-related research and development--as well as
-                  some ReactJS and web-development links.
+                  space-related research and development--as well as some
+                  ReactJS and web-development links.
                 </Text>
               </i>
             </li>
@@ -81,7 +82,9 @@ export function PagesSection() {
             </li>
             <li>
               <i>
-                <Text color={"body_text"}>Bug report? Something on your mind? Feel free to reach out!</Text>
+                <Text color={"body_text"}>
+                  Bug report? Something on your mind? Feel free to reach out!
+                </Text>
               </i>
             </li>
           </ul>
