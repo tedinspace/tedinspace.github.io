@@ -13,11 +13,10 @@ export function PagesSection() {
         <Line />
         <br />
         <Box style={{ maxWidth: 480 }}>
-          <Text color="header"> adding things as I can!</Text>
+          <Text color="header"> adding things as I can</Text>
           <br />
           <ul>
-            {/*
-          <li>
+            <li>
               <Integration />
               &nbsp;&nbsp;
               <a href="https://tedsite.com/convolve/">
@@ -27,14 +26,13 @@ export function PagesSection() {
             <li>
               <i>
                 <Text color={"body_text"}>
-                  numerically solves convolution integrals 
+                  numerically solves convolution integrals for specified functions
                 </Text>
               </i>
             </li>
             <li>
               <br />
             </li>
-          */}
             <li>
               <Clock />
               &nbsp;&nbsp;
