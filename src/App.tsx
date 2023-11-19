@@ -13,7 +13,7 @@ import { fetchThemeSetting, updateThemeSetting } from "./shared/storage";
 const theme_merged = deepMerge(grommet, theme);
 
 function App() {
-  const [darkMode, toggleDarkLight] = React.useState(fetchThemeSetting());
+  const [darkMode, toggleDarkLight] = React.useState(fetchThemeSetting(true));
   return (
     <Grommet
       full

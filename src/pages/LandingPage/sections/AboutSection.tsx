@@ -13,11 +13,10 @@ export function AboutSection() {
           My name is <Text color="logo">Ted</Text>, and this is my
           site.
           <br /> <br />
-          I'm a professional programmer, who works in and is passionate about
+          I'm a professional programmer and analyst, who works in and is passionate about
           space systems. I love building things and often have ideas for useful
-          tools and little widgets related to space systems and situational
-          awareness.
-          <br />
+          tools and little widgets.
+          <br /><br/>
           My intention for this website is to serve as a landing page for
           anything I'm developing.
           <br />

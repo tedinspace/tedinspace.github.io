@@ -1,19 +1,6 @@
-// export const DARK0 = "#111418";
-// export const DARK1 = "#1C2127";
-// export const DARK2 = "#252A31";
-// export const DARK3 = "#2F343C";
-// export const DARK4 = "#383E47";
-// export const DARK5 = "#404854";
-// export const DARK6 = "#48505c";
-// export const LIGHT0 = "#f0e5e1";
-// export const POP0 = "#913a1d";
-// export const POP1 = "#c96d4f";
-// export const POP2 = "#d4a798";
-// export const HEADER0 = "#ABB3BF";
-// export const TED = "#a4c8de";
-// export const UPPERBAR0 = "#272e38";
-// export const UPPERBAR1 = "#161b22";
-
+/**
+ * custom grommet light/dark theme object
+ */
 export const theme = {
   global: {
     colors: {
@@ -34,7 +21,6 @@ export const theme = {
         dark: "#272e38", // UPPERBAR0
         light: "#E5E8EB",
       },
-
       bar_accent: {
         dark: "#161b22", // UPPERBAR1
         light: "#C5CBD3",
@@ -64,9 +50,21 @@ export const theme = {
         dark: "#ABB3BF",
         light: "black",
       },
-      swap_soft:{
-        dark:"#fff",
-        light:"#8F99A8"
+      swap_soft: {
+        dark: "#fff",
+        light: "#8F99A8",
+      },
+      swap_hard: {
+        dark: "#fff",
+        light: "#000",
+      },
+      no_swap: {
+        dark: "#000",
+        light: "#fff",
+      },
+      time_bar: {
+        dark: "#383E47",
+        light: "#D3D8DE",
       },
       warning: "#EB6847",
       success0: "#238C2C",
@@ -81,6 +79,19 @@ export const theme = {
       focus: "light_blue",
       control: "light_blue",
       active: "orange_medium",
+      'background-contrast': 'swap_hard'
+    },
+  },
+  tab: {
+    border: {
+      color: "swap_soft",
+      active: {
+        color: "orange",
+      },
+    },
+    color: "swap_soft",
+    active: {
+      color: "orange",
     },
   },
   card: {
