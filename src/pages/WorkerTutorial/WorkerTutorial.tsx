@@ -1,4 +1,4 @@
-import { Paragraph, Text, Box } from "grommet";
+import { Text, Box } from "grommet";
 import { CopyBlock, nord, monoBlue } from "react-code-blocks";
 import { AppTsxCode, FibonacciWorkerTs } from ".";
 
@@ -94,22 +94,32 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
         <h3> II. Repository Link</h3>
         <Box style={{ marginLeft: 35 }}>
           <Text size="xlarge">
-            <a href="https://github.com/tedinspace/worker-tutorial">
+            <a
+              href="https://github.com/tedinspace/worker-tutorial"
+              target="_blank"
+              rel="noreferrer"
+            >
               code repository here
             </a>
           </Text>
           <br />
-          <i>
-            if you're the type of person who just likes to look at the code
-            directly in the context it is ran, here's the link.
-          </i>
+          <Text color="swap_soft">
+            <i>
+              if you're the type of person who just likes to look at the code
+              directly in the context it is ran, click the link above.
+            </i>
+          </Text>
         </Box>
         <h3> III. Copy and Paste Code</h3>
         <Box style={{ marginLeft: 35 }}>
           We have two files here:&nbsp;
           <Box style={{ marginLeft: 15 }}>
             <br />
-            <a href="https://github.com/tedinspace/worker-tutorial/blob/main/src/fibonacci-worker.ts">
+            <a
+              href="https://github.com/tedinspace/worker-tutorial/blob/main/src/fibonacci-worker.ts"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>&nbsp;&nbsp;1. fibonacci-worker.ts</i>
             </a>
             <Box style={{ marginLeft: 25 }}>
@@ -117,7 +127,11 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
               function (instead of mine 'fibonacci(...)')
             </Box>
             <br />
-            <a href="https://github.com/tedinspace/worker-tutorial/blob/main/src/App.tsx">
+            <a
+              href="https://github.com/tedinspace/worker-tutorial/blob/main/src/App.tsx"
+              target="_blank"
+              rel="noreferrer"
+            >
               <i>&nbsp;&nbsp;2. App.tsx</i>
             </a>
             <Box style={{ marginLeft: 25 }}>
@@ -156,7 +170,11 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
         <div style={{ height: 50 }} />
         <h3>IV. Live Demo</h3>
         <Text size="xlarge">
-          <a href="https://tedsite.com/worker-tutorial/">
+          <a
+            href="https://tedsite.com/worker-tutorial/"
+            target="_blank"
+            rel="noreferrer"
+          >
             view the code shown above here
           </a>
         </Text>
@@ -172,24 +190,35 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
           <br />
           <ol>
             <li>
-              <a href="https://blog.logrocket.com/web-workers-react-typescript/">
+              <a
+                href="https://blog.logrocket.com/web-workers-react-typescript/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Longer tutorial with more code and explanation
               </a>
             </li>
             <li>
-              <a href="https://blog.logrocket.com/integrating-web-workers-in-a-react-app-with-comlink/">
+              <a
+                href="https://blog.logrocket.com/integrating-web-workers-in-a-react-app-with-comlink/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Using Comlink to access web workers
               </a>
             </li>
             <li>
-              <a href="https://github.com/tedinspace/convolve/blob/main/src/workers/runFunctionEval.ts">
+              <a
+                href="https://github.com/tedinspace/convolve/blob/main/src/workers/runFunctionEval.ts"
+                target="_blank"
+                rel="noreferrer"
+              >
                 More of my code that uses web workers to numerically solve
                 mathematical functions
               </a>
             </li>
           </ol>
         </Box>
-
         <div style={{ height: 50 }} />
       </div>
     </Box>
