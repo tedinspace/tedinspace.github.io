@@ -5,6 +5,7 @@ import { CodeLinkSection } from "./LandingPage/sections/CodeLinkSection";
 import { AboutSection } from "./LandingPage/sections/AboutSection";
 import { PagesSection } from "./LandingPage/sections/PagesSection";
 import { BottomPad } from "./LandingPage/subcomponents/BottomPad";
+import { WidgetsSection } from "./LandingPage/sections/WidgetsSection";
 function RootLayout() {
   return (
     <Box fill background={"background"} overflow="none">
@@ -12,6 +13,7 @@ function RootLayout() {
         <ImageHeader />
         <Page>
           <AboutSection />
+          <WidgetsSection/>
           <PagesSection />
           <CodeLinkSection />
           <BottomPad />

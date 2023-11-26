@@ -9,6 +9,7 @@ import { deepMerge } from "grommet/utils";
 import { theme } from "./shared/theme";
 import React from "react";
 import { fetchThemeSetting, updateThemeSetting } from "./shared/storage";
+import { WorkerTutorial } from "./pages/WorkerTutorial/WorkerTutorial";
 
 const theme_merged = deepMerge(grommet, theme);
 
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<RootLayout />} />
           <Route path="/links" element={<LinksPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/webworkers" element={<WorkerTutorial darkMode={darkMode} />} />
           <Route path="/*" element={<Page404 />} />
         </Routes>
       </Box>

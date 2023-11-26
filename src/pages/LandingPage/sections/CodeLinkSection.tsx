@@ -12,7 +12,7 @@ export function CodeLinkSection() {
         <Line/>
         <br/>
         <Box>
-          <Text color="header">If you're curious.</Text>
+          <Text color="header">If you're curious</Text>
           <br />
           <ul>
             <li>
