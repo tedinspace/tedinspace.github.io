@@ -44,11 +44,12 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
           of computation that is not trivial, you will experience lagging where
           your application becomes unresponsive for periods of time.
           <br />
-          <br />I really like web applications because anyone with a browser and internet access can
-          use your code without downloading anything or worrying about
-          operating systems. It makes applications the most accessible to the
-          audience you want to reach, since no one (including technical
-          professionals) likes following README installation instructions.
+          <br />I really like web applications because anyone with a browser and
+          internet access can use your code without downloading anything or
+          worrying about operating systems. It makes applications the most
+          accessible to the audience you want to reach, since no one (including
+          technical professionals) likes following README installation
+          instructions.
           <br />
           <br />
           That being said, if you do want to perform any significant computation
@@ -84,7 +85,8 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
                 one task takes a long time, the page will become unresponsive.
                 Let's say A takes 30 seconds to execute; you can pass the
                 computation to a web worker and then execute B and C with no
-                delay. Otherwise, your user will have to sit for 30 seconds with an unresponsive web page, while A executes.
+                delay. Otherwise, your user will have to sit for 30 seconds with
+                an unresponsive web page, while A executes.
               </li>
             </ol>
           </div>
@@ -152,12 +154,12 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
           />
         </Box>
         <div style={{ height: 50 }} />
-        <h3>Live Demo</h3>
+        <h3>IV. Live Demo</h3>
         <Text size="xlarge">
-            <a href="https://tedsite.com/worker-tutorial/">
-              view the code shown above here 
-            </a>
-          </Text>
+          <a href="https://tedsite.com/worker-tutorial/">
+            view the code shown above here
+          </a>
+        </Text>
         <div style={{ height: 20 }} />
         <h3>V. Conclusion and Resources </h3>
         <Box style={{ marginLeft: 35 }}>
@@ -177,6 +179,12 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
             <li>
               <a href="https://blog.logrocket.com/integrating-web-workers-in-a-react-app-with-comlink/">
                 Using Comlink to access web workers
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/tedinspace/convolve/blob/main/src/workers/runFunctionEval.ts">
+                More of my code that uses web workers to numerically solve
+                mathematical functions
               </a>
             </li>
           </ol>
