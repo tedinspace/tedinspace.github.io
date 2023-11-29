@@ -67,7 +67,7 @@ export function WorkerDiagram(props: { darkMode: boolean }) {
               </Text>
             </WorkerBox>
             <WorkerBox id={ID.MAIN_POST}>
-              Post Message
+              <Text color='#D1980B'><b>Post Message</b></Text>
               <Box pad="xsmall">
                 <CodeBlock
                   text="myWorker.postMessage( {myData: 'my data'} );"
