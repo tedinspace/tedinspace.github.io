@@ -1,6 +1,7 @@
 import { Text, Box } from "grommet";
 import { CopyBlock, nord, monoBlue } from "react-code-blocks";
 import { AppTsxCode, FibonacciWorkerTs } from ".";
+import { WorkerDiagram } from "./WorkerDiagram";
 
 export function WorkerTutorial(props: { darkMode: boolean }) {
   return (
@@ -9,6 +10,8 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
         <Text size="xxlarge" color={"orange"}>
           <b>Web Workers / Multi-threading in ReactJS (with TypeScript)</b>
         </Text>
+        <div style={{ height: 55 }} />
+        <WorkerDiagram darkMode={props.darkMode}/>
         <div style={{ height: 55 }} />
         <h3>Index</h3>
         <ul>
@@ -152,6 +155,7 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
             language={"js"}
             showLineNumbers
             theme={props.darkMode ? nord : monoBlue}
+            wrapLongLines
           />
           <br />
           <br />
@@ -165,6 +169,7 @@ export function WorkerTutorial(props: { darkMode: boolean }) {
             language={"jsx"}
             showLineNumbers
             theme={props.darkMode ? nord : monoBlue}
+            wrapLongLines
           />
         </Box>
         <div style={{ height: 50 }} />
