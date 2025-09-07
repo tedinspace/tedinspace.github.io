@@ -15,9 +15,7 @@ import {
   Paint,
   Reactjs,
   Risk,
-  Rss,
   Satellite,
-  System,
   Tag,
   Youtube,
 } from "grommet-icons";
@@ -47,12 +45,12 @@ export const ColumnContent: IAllContent = {
           description:
             "Crustal Dynamics Data Information System (CDDIS): contains GNSS satellite information. I use it for high rate ephemerides for GPS satellites.",
           icon: <Globe color={"#FBD065"} size="large" />,
-          link: "https://cddis.nasa.gov/Data_and_Derived_Products/GNSS/hourly_30second_data.html",
+          link: "https://www.earthdata.nasa.gov/data/space-geodesy-techniques/gnss/hourly-30-second-data-product",
         },
         {
           title: "GPS Tags",
           description:
-            "RSO and PRN numbers of GPS satellites; I use this in tandem with CDDIS, as the tags in its documentation are not accurate (as of June 2023).",
+            "RSO and PRN numbers of GPS satellites; I use this in tandem with CDDIS, as the tags in its documentation have been inaccurate in the past.",
           icon: <Tag color={"#F0B726"} size="large" />,
           link: "https://www.n2yo.com/satellites/?c=20",
         },
@@ -114,39 +112,25 @@ export const ColumnContent: IAllContent = {
             "Javascript library for propagation, coordinate conversions, time systems, and more.",
           icon: <Code size="large" color="#E5E8EB" />,
           link: "https://github.com/shashwatak/satellite-js",
-        },
-        {
-          title: "Optical Link Budget Code",
-          description:
-            "An optical link budget tool, with support for scintillation, beam fit, APDs, and 4 quadrant detectors from MIT-STARLab",
-          icon: <Rss size="large" color="#96290D" />,
-          link: "https://github.com/MIT-STARLab/Optical-Link-Budget",
-        },
+        }
       ],
     },
     {
       sectionTitle: "Textbooks",
       links: [
         {
-          title: "Spacecraft Systems Engineering (4th Edition)",
+          title: "Fundamentals of Astrodynamics and Applications",
           description:
-            "Texbook by Peter Fortescue, Graham Swinerd, and John Stark",
+            "David A. Vallado",
           icon: <Satellite size="large" color="#8E292C" />,
-          link: "https://download.e-bookshelf.de/download/0000/5963/63/L-G-0000596363-0002363727.pdf",
+          link: "https://archive.org/details/FundamentalsOfAstrodynamicsAndApplications_201906/Fundamentals%20of%20astrodynamics%20and%20applications-David%20A%20Vallado.pdf",
         },
         {
           title: "Probability",
           description:
             "Probability textbook by Dimitri Bertsekas and John Tsitsiklis",
           icon: <Risk size="large" color="#935610" />,
-          link: "https://bank.engzenon.com/tmp/5e7f97b9-c014-4995-972e-4bc8c0feb99b/5f00c512-a668-4279-90fe-4777c0feb99b/introduction_to_probability_bertsekas_2nd_2008.pdf",
-        },
-        {
-          title: "Communication Systems Engineering (2nd Edition)",
-          description:
-            "Covers source coding, quantization, modulation, noise, BER analysis, coding, etc.",
-          icon: <System size="large" color="#5F6B7C" />,
-          link: "https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=91646880c73ed85e7759842b5084e1c99b95ab3a",
+          link: "https://www-sop.inria.fr/members/Giovanni.Neglia/probas/bertsekas_tsitsiklis_probability.pdf",
         },
         {
           title: "Data Networks (2nd Edition)",
