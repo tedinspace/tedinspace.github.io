@@ -25,7 +25,7 @@ export function WidgetsSection() {
             <li>
               <i>
                 <Text color={"body_text"}>
-                  Numerically solves convolution integrals for specified functions
+                  Numerically solves convolution integrals for specified functions; not mobile compatible
                 </Text>
               </i>
             </li>
