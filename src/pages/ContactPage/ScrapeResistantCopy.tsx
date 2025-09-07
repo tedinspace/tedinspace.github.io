@@ -12,7 +12,7 @@ function ScrapeResistantCopy() {
                         copy(decode(ENCODED_EMAIL));
                     }} />
                     &nbsp;
-                    <Tip content="uses basic obfuscation to trick naive web servers; click for details.">
+                    <Tip content="uses basic obfuscation to trick naive web scrapers; click for details.">
                         <a href="https://github.com/tedinspace/tedinspace.github.io/tree/develop/src/pages/ContactPage/scrapeResistanceLogic.ts"><CircleInformation size="medium" color={"orange_light"} /></a>
                     </Tip>
                 </Box>
